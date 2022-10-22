@@ -19,15 +19,6 @@ const assets = [
     'https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2',
 ]
 
-// const limitCacheSize = (name, size) => {
-//     caches.open(name).then(cache => {
-//         cache.keys().then(keys => {
-//             if (keys.length >= size) {
-//                 cache.delete(keys[0]).then(limitCacheSize(name, size));
-//             }
-//         })
-//     })
-// }
 
 const openConnection = () => {
     if (db) return;
@@ -50,42 +41,14 @@ const openConnection = () => {
 
 
 self.addEventListener("install", (event) => {
-    // event.waitUntil(
-    //     caches.open(cacheName).then(cache => {
-    //         cache.addAll(assets);
-    //     })
-    // );
-
     if (self.indexedDB) {
         event.waitUntil(openConnection());
     }
 })
 
 self.addEventListener('activate', event => {
-    // event.waitUntil(
-    //     caches.keys().then(keys => {
-    //         return Promise.all(keys.filter(key => key !== cacheName).map(key => caches.delete(key[0])));
-    //     })
-    // )
+    console.log("Service worker activated");
 })
-
-// self.addEventListener('fetch', event => {
-    // event.respondWith(
-    //     caches.match(event.request).then(cacheRes => {
-    //         return cacheRes || fetch(event.request).then(fetchRes => {
-    //             caches.open(dynamicCacheName).then(cache => {
-    //                 cache.put(event.request.url, fetchRes.clone());
-    //                 limitCacheSize(dynamicCacheName, 15);
-    //                 return fetchRes;
-    //             });
-    //         });
-    //     }).catch(() => {
-    //         if(event.request.url.indexOf('.html > -1')) {
-    //             return caches.match('index.html')
-    //         }
-    //     })
-    // );
-// })
 
 self.addEventListener('message', event => {
     const { body, msg } = event.data;
