@@ -6,7 +6,6 @@ if ('serviceWorker' in navigator) {
     });
 
     navigator.serviceWorker.addEventListener('message', event => {
-        console.log(event, 'client event');
         let divElement = document.getElementById('images-list');
         event.data.map(val => {
             divElement.innerHTML += getCard(val.image, val.id)
