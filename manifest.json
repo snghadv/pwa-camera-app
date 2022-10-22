@@ -1,0 +1,41 @@
+{
+    "name": "PWA Camera App",
+    "short_name": "PWA Camera",
+    "start_url": "index.html",
+    "display": "standalone",
+    "backgroud_color": "#4db6ac",
+    "theme_color": "#00695c",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "img/icons/icons8-camera-48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "img/icons/icons8-camera-96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "img/icons/icons8-camera-192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "img/icons/icons8-camera-240.png",
+            "type": "image/png",
+            "sizes": "240x240"
+        },
+        {
+            "src": "img/icons/icons8-camera-480.png",
+            "type": "image/png",
+            "sizes": "480x480"
+        },
+        {
+            "src": "img/icons/icons8-camera-512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}

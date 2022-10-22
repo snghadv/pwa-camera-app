@@ -1,0 +1,42 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#4db6ac">
+  <meta name="apple-mobile-web-app-status-bar" content="#00695c">
+  <title>PWA Camera</title>
+  <!-- materialize icons, css & js -->
+  <link type="text/css" href="css/materialize.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" href="css/styles.css" rel="stylesheet">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="img/icons/iOS/icons8-camera-48(@1x).png">
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+
+</head>
+
+<body class="teal lighten-5">
+
+  <nav class="z-depth-0">
+    <div class="nav-wrapper container" style="text-align: center;">
+      <a href="/"><span>PWA CAMERA</span></a>
+    </div>
+    <div></div>
+  </nav>
+
+  <div id = "images-list" class="images container grey-text text-darken-1"></div>
+
+  <div class="center">
+    <a class="btn-floating btn-small btn-large camera-btn" href="pages/cameraPage.html">
+      <i class="material-icons">photo_camera</i>
+    </a>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/loadImages.js"></script>
+</body>
+
+</html>
