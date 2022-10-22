@@ -35,5 +35,5 @@ function deleteImage(id) {
         }
     });
 
-    window.location = "/sw-project/pages/deleteFinal.html";
+    window.location = "/pwa-camera-app/pages/deleteFinal.html";
 }
