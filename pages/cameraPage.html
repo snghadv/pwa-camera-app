@@ -1,0 +1,31 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" href="../css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" href="../css/styles.css" rel="stylesheet">
+</head>
+
+<body style="background-color: black;">
+    <div class="camera">
+        <video id="video" class="video-camera" autoplay playsinline></video>
+        <img id="photo" class="camera-img" />
+        <button id="capture-button" class="photo-button">
+            <div class="circle"></div>
+            <div class="ring"></div>
+        </button>
+        <div class="center-div">
+            <button id="retake-button" class="retake">
+                <i class="material-icons" style="color: white; font-size: 60px;">settings_backup_restore</i>
+            </button>
+            <button id="confirm-button" class="tick" onclick='javascript:window.location="finalPage.html"'>
+            </button>
+        </div>
+        <canvas id="canvas"></canvas>
+    </div>
+    <script src="../js/camera.js"></script>
+</body>
+
+</html>
